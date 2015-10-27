@@ -1,0 +1,47 @@
+%footer#footer
+  %div.ballContent
+    %img{src: '/assets/img/Ball.png'}
+  %div.ononaoSpace
+    %img{src: '/assets/img/ononaoSpace.png'}
+
+  %div.signature
+    %form{:action => "/my-handling-form-page", :method => "post"}
+      %div
+        %label{:for => "name", :style => 'color: #fff;'} 名前:
+        %input#name{:type => "text", :style => 'padding: 5px 20px 5px 0px; margin: 20px 0;'}/
+
+    %div.button
+      %a{:href => '#'} おのなおを助ける
+    %div.button
+      %a{:href => '#'} ジジイを放っておく
+
+
+  %div.social-area-syncer{:style => 'background: #000;'}
+    %ul.social-button-syncer
+      / Twitter
+      %li.sc-tw
+        %a.twitter-share-button{"data-count" => "vertical", "data-dnt" => "true", "data-lang" => "ja", "data-url" => "https://syncer.jp", :href => "https://twitter.com/share"} ツイート
+      / Facebook
+      %li.sc-fb
+        .fb-like{"data-action" => "like", "data-href" => "https://syncer.jp", "data-layout" => "box_count", "data-share" => "false", "data-show-faces" => "true"}
+      / Google+
+      %li
+        .g-plusone{"data-href" => "https://syncer.jp", "data-size" => "tall"}
+      / はてなブックマーク
+      %li
+        %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "ja", "data-hatena-bookmark-layout" => "vertical-balloon", :href => "http://b.hatena.ne.jp/entry/https://syncer.jp", :title => "このエントリーをはてなブックマークに追加"}
+          %img{:alt => "このエントリーをはてなブックマークに追加", :height => "20", :src => "https://b.st-hatena.com/images/entry-button/button-only@2x.png", :style => "border:none;", :width => "20"}/
+      / pocket
+      %li
+        %a.pocket-btn{"data-lang" => "en", "data-pocket-count" => "vertical", "data-pocket-label" => "pocket", "data-save-url" => "https://syncer.jp"}
+      / LINE [画像は公式ウェブサイトからダウンロードして下さい]
+      %li.sc-li
+        %a{:href => "http://line.me/R/msg/text/?https://syncer.jp"}
+          %img.sc-li-img{:alt => "LINEに送る", :height => "60", :src => "./linebutton_36x60.png", :width => "36"}/
+    / Facebook用
+    #fb-root
+
+  %p Copyright © おのなお
+
+  %div#pageTop{:style => 'opacity: 1; top: 50px; right: 100px; position: fixed;'}
+    %a{:href => '#', :style => 'background-position: 0% 100%;'}

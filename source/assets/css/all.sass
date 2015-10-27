@@ -1,0 +1,258 @@
+@import compass
+@import "mixin"
+
+*
+  font-size: 18px
+  padding: 0
+  margin: 0
+  border: 0
+  vertical-align: baseline
+
+body
+  text-align: center
+
+
+.image
+  margin: 50px auto
+
+.image img
+  width: 500px
+
+.image p
+  font-size: 20px
+  line-height: 28px
+  width: 500px
+  margin: auto
+
+#header
+  width: 100%
+  height: 100%
+  background-color: #090331
+  background-position: center
+  background-size: cover
+
+
+.social-area-syncer
+  width: 100%
+  min-height: 190px
+  background: #ffffff
+  /* 背景色
+  padding: 1.5em 0
+
+/* デスクトップPCでは高さを拡張する
+@media screen and (min-width: 480px)
+  .social-area-syncer
+    min-height: 119px
+
+/******************************
+ * [ul]要素
+ ******************************
+/* スマホ
+
+ul.social-button-syncer
+  width: 238px
+  margin: 24px auto
+  padding: 0
+  border: none
+  list-style-type: none
+  li
+    float: left
+    text-align: center
+    height: 71px
+    margin: 0 8px
+    padding: 0
+
+/* デスクトップ
+@media screen and (min-width: 480px)
+  ul.social-button-syncer
+    width: 410px
+
+/******************************
+ * [li]要素
+ ******************************
+
+/******************************
+ * 各種ボタン
+ ******************************
+/* [Twitter]
+
+.sc-tw
+  width: 71px
+
+/* [Facebook]
+
+.sc-fb
+  z-index: 99
+  width: 69px
+
+/* [LINE]
+
+.sc-li
+  width: 50px
+
+.sc-li-img
+  border: none
+  margin: 0 auto
+  padding: 0
+  width: 36px
+  height: 60px
+
+/* デスクトップPCではLINEボタンを表示しない
+@media screen and (min-width: 480px)
+  .sc-li
+    display: none
+
+
+.headerImg
+  text-align: center
+  img
+    width: 1000px
+
+.headerWord
+  text-align: center
+
+.headerWord img
+  width: 500px
+  margin: 50px 0
+
+.headerAnimation img
+  width: 50px
+  animation-iteration-count: infinite
+  animation-direction: normal
+  animation-play-state: running
+
+.mainContent
+  position: relative
+  height: 100%
+  background-color: #ffffff
+  +filter-gradient(#ffffff, #000000, vertical)
+  +background-image(linear-gradient(top, #ffffff 0%,#2989d8 31%,#207cca 54%,#312a6d 81%,#000000 100%))
+
+.talkContent
+  background-color: #fff
+  position: relative
+  margin: auto
+  width: 700px
+  z-index: 60
+  height: 100%
+
+.talkContent::after
+  content: " "
+  background-image: linear-gradient(#ffffff 0%,rgba(255,255,255,0) 100%)
+  position: absolute
+  width: 700px
+  height: 100px
+  bottom: -100px
+  z-index: 20
+  display: block
+
+.inner
+  padding: 20px
+
+.linedot
+  text-align: left
+  margin: 20px auto
+
+.linedot span
+  background-color: #fff
+  color: #000
+  padding: 5px
+  margin-left: 10px
+  position: relative
+  z-index: 10
+  letter-spacing: 2px
+
+.linedot hr
+  border: none 0px transparent
+  border-bottom: dotted 1px #000
+  position: relative
+  top: -23px
+
+.characterIntro
+  margin: 0 30px
+  position: relative
+  top: -20px
+
+.inner .ononao
+  color: #999
+
+.ononao
+  text-align: left
+  margin: 40px 0
+
+.ononao dt
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+
+.ononao dd
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+  width: 430px
+  text-align: justify
+  line-height: 24px
+
+
+.ononao img
+  width: 100px
+
+.hakase
+  text-align: left
+  margin: 40px 0
+
+.hakase dt
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+
+.hakase dd
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+  width: 430px
+  text-align: justify
+  line-height: 24px
+  color: green
+
+.hakase img
+  width: 100px
+
+
+#footer
+  height: 100%
+  background-color: #000
+
+#footer p
+  color: #fff
+  margin: 20px 0
+
+#pageTop a
+  background: url('/assets/img/pageTop.png')
+  background-size: 130px
+  text-indent: -99999px
+  width: 130px
+  display: block
+  height: 130px
+
+.ballContent
+  text-align: center
+
+.ononaoSpace
+  text-align: center
+
+.ononaoSpace img
+  width: 500px
+
+.signature
+  a
+    color: #fff
+    border: 3px solid #fff
+    border-radius: 25px
+    padding: 5px 20px
+    text-decoration: none
+    &:hover
+      opacity: 0.5
+
+.button
+  margin: 40px 0

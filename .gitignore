@@ -1,0 +1,19 @@
+# OSX
+.DS_Store
+Thumbs.db
+
+# Bundler
+/.bundle
+/vendor/
+Gemfile.lock
+
+# Sass
+/.sass-cache
+/.cache
+
+# Other
+*.codekit
+*.sublime-project
+*.sublime-workspace
+
+----- September 18th -----
