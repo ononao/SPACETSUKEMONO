@@ -52,6 +52,9 @@ var syncerTimeout = null ;
 // 一連の処理
 $( function()
 {
+	setInterval(function() {
+  $(".ballContent").velocity("callout.shake");
+}, 2000);
 	// スクロールイベントの設定
 	$( window ).scroll( function()
 	{
@@ -104,7 +107,7 @@ $( function()
 		function()
 		{
 			// スムーズにスクロールする
-			$( 'html,body' ).animate( {scrollTop:0} , 4000 ) ;
+			$( 'html,body' ).animate( {scrollTop:0} , 2000 ) ;
 		}
 	) ;
 } ) ;

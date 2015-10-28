@@ -1,5 +1,6 @@
 @import compass
 @import "mixin"
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300)
 
 *
   font-size: 18px
@@ -104,22 +105,18 @@ ul.social-button-syncer
 
 
 .headerImg
-  text-align: center
+  position: relative
   img
     width: 1000px
 
 .headerWord
-  text-align: center
+  position: absolute
+  top: 200px
+  left: 300px
 
 .headerWord img
-  width: 500px
+  width: 800px
   margin: 50px 0
-
-.headerAnimation img
-  width: 50px
-  animation-iteration-count: infinite
-  animation-direction: normal
-  animation-play-state: running
 
 .mainContent
   position: relative
@@ -256,3 +253,43 @@ ul.social-button-syncer
 
 .button
   margin: 40px 0
+
+
+
+.endrollwrapper
+  position: relative
+  height: 500px
+  overflow: hidden
+  width: 100%
+  margin-top: 20px
+
+.endroll
+  position: absolute
+  top: 100%
+  left: 50%
+  width: 400px
+  margin-left: -200px
+  font: 300 30px/1 'Open Sans Condensed', sans-serif
+  text-align: center
+  text-transform: uppercase
+  color: #fff
+  animation: 40s credits linear infinite
+
+.movie
+  margin-bottom: 50px
+  font-size: 50px
+
+.job
+  margin-bottom: 5px
+  font-size: 18px
+
+.name
+  margin-bottom: 50px
+  font-size: 35px
+
+@keyframes credits
+  0%
+    top: 100%
+
+  100%
+    top: -500%
