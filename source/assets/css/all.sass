@@ -8,7 +8,9 @@
   margin: 0
   border: 0
   vertical-align: baseline
-
+  +mediaquery-smartphone
+    font-size: 13px
+    font-weight: bold
 body
   text-align: center
 
@@ -18,17 +20,31 @@ body
 
 .image img
   width: 500px
+  +mediaquery-tablet
+    width: 500px
+  +mediaquery-tablet-small
+    width: 500px
+  +mediaquery-smartphone
+    width: 300px
 
 .image p
   font-size: 20px
   line-height: 28px
   width: 500px
   margin: auto
+  +mediaquery-tablet
+    width: 500px
+  +mediaquery-tablet-small
+    width: 500px
+  +mediaquery-smartphone
+    width: 300px
+
+// header
 
 #header
   width: 100%
-  height: 100%
-  background-color: #090331
+  background-image: url("../img/manga.png")
+  background-repeat: no-repeat
   background-position: center
   background-size: cover
 
@@ -108,15 +124,23 @@ ul.social-button-syncer
   position: relative
   img
     width: 1000px
+    +mediaquery-tablet-small
+      width: 700px
+    +mediaquery-smartphone
+      width: 400px
 
 .headerWord
-  position: absolute
-  top: 200px
-  left: 300px
+  p
+    font-size: 70px
+    padding: 50px 0
+    +mediaquery-tablet
+      font-size: 50px
+    +mediaquery-tablet-small
+      font-size: 50px
+    +mediaquery-smartphone
+      font-size: 25px
 
-.headerWord img
-  width: 800px
-  margin: 50px 0
+
 
 .mainContent
   position: relative
@@ -124,6 +148,12 @@ ul.social-button-syncer
   background-color: #ffffff
   +filter-gradient(#ffffff, #000000, vertical)
   +background-image(linear-gradient(top, #ffffff 0%,#2989d8 31%,#207cca 54%,#312a6d 81%,#000000 100%))
+  +mediaquery-tablet
+    background: none
+  +mediaquery-tablet-small
+    background: none
+  +mediaquery-smartphone
+    background: none
 
 .talkContent
   background-color: #fff
@@ -132,19 +162,18 @@ ul.social-button-syncer
   width: 700px
   z-index: 60
   height: 100%
+  +mediaquery-tablet
+    width: 100%
+  +mediaquery-tablet-small
+    width: 100%
+  +mediaquery-smartphone
+    width: 100%
 
-.talkContent::after
-  content: " "
-  background-image: linear-gradient(#ffffff 0%,rgba(255,255,255,0) 100%)
-  position: absolute
-  width: 700px
-  height: 100px
-  bottom: -100px
-  z-index: 20
-  display: block
 
 .inner
-  padding: 20px
+  padding: 20px 0
+  +mediaquery-smartphone
+    padding: 10px 0
 
 .linedot
   text-align: left
@@ -169,30 +198,60 @@ ul.social-button-syncer
   margin: 0 30px
   position: relative
   top: -20px
+  +mediaquery-tablet
+    margin: 0 10px
+  +mediaquery-tablet-small
+    margin: 0 10px
+  +mediaquery-smartphone
+    margin: 0 10px
 
-.inner .ononao
-  color: #999
 
-.ononao
+.andy
   text-align: left
   margin: 40px 0
+  color: #000
 
-.ononao dt
+.andy dt
   display: inline-block
   vertical-align: middle
   zoom: 1
 
-.ononao dd
+.andy dd
   display: inline-block
   vertical-align: middle
   zoom: 1
-  width: 430px
+  width: 530px
   text-align: justify
   line-height: 24px
+  +mediaquery-tablet
+    width: 500px
+  +mediaquery-tablet-small
+    width: 400px
+  +mediaquery-smartphone
+    width: 220px
 
 
-.ononao img
-  width: 100px
+.andy img
+  width: 90px
+  +mediaquery-smartphone
+    width: 75px
+
+.andyIntro dd
+  width: 400px
+  +mediaquery-tablet
+    width: 300px
+  +mediaquery-tablet-small
+    width: 300px
+  +mediaquery-smartphone
+    width: 170px
+
+.andyIntro img
+  +mediaquery-tablet
+    width: 100px
+  +mediaquery-tablet-small
+    width: 100px
+  +mediaquery-smartphone
+    width: 80px
 
 .hakase
   text-align: left
@@ -207,14 +266,71 @@ ul.social-button-syncer
   display: inline-block
   vertical-align: middle
   zoom: 1
-  width: 430px
+  width: 530px
   text-align: justify
   line-height: 24px
-  color: green
+  color: #333300
+  font-weight: bold
+  +mediaquery-tablet
+    width: 500px
+  +mediaquery-tablet-small
+    width: 430px
+  +mediaquery-smartphone
+    width: 220px
+
 
 .hakase img
-  width: 100px
+  width: 80px
 
+.hakaseIntro dd
+  width: 400px
+  +mediaquery-tablet
+    width: 300px
+  +mediaquery-tablet-small
+    width: 300px
+  +mediaquery-smartphone
+    width: 140px
+
+
+.hakaseIntro img
+  +mediaquery-tablet
+    width: 100px
+  +mediaquery-tablet-small
+    width: 100px
+  +mediaquery-smartphone
+    width: 80px
+
+.flower img
+  width: 150px
+  +mediaquery-tablet
+    width: 120px
+  +mediaquery-tablet-small
+    width: 120px
+  +mediaquery-smartphone
+    width: 110px
+
+.flower dd
+  width: 460px
+  +mediaquery-tablet
+    width: 300px
+  +mediaquery-tablet-small
+    width: 300px
+  +mediaquery-smartphone
+    width: 190px
+
+.fuck dd
+  width: 150px
+  font-size: 30px
+  +mediaquery-smartphone
+    width: 150px
+
+.fuck img
+  width: 150px
+  +mediaquery-smartphone
+    width: 110px
+
+
+// footer
 
 #footer
   height: 100%
@@ -224,72 +340,55 @@ ul.social-button-syncer
   color: #fff
   margin: 20px 0
 
-#pageTop a
-  background: url('/assets/img/pageTop.png')
-  background-size: 130px
-  text-indent: -99999px
-  width: 130px
-  display: block
-  height: 130px
-
-.ballContent
-  text-align: center
-
-.ononaoSpace
-  text-align: center
-
-.ononaoSpace img
-  width: 500px
-
-.signature
-  a
-    color: #fff
-    border: 3px solid #fff
-    border-radius: 25px
-    padding: 5px 20px
-    text-decoration: none
-    &:hover
-      opacity: 0.5
-
-.button
-  margin: 40px 0
 
 
+.buy-saikan
+  padding: 40px 0
 
-.endrollwrapper
-  position: relative
-  height: 500px
-  overflow: hidden
-  width: 100%
-  margin-top: 20px
-
-.endroll
-  position: absolute
-  top: 100%
-  left: 50%
-  width: 400px
-  margin-left: -200px
-  font: 300 30px/1 'Open Sans Condensed', sans-serif
-  text-align: center
-  text-transform: uppercase
+.buy-saikan a
+  border: 1px solid #FF00FF
+  border-radius: 25px
+  text-decoration: none
+  padding: 5px 20px
+  font-size: 40px
   color: #fff
-  animation: 40s credits linear infinite
+  background-color: #FF00FF
+  +mediaquery-tablet
+    font-size: 30px
+  +mediaquery-tablet-small
+    font-size: 30px
+  +mediaquery-smartphone
+    font-size: 20px
+  &:hover
+    opacity: 0.5
 
-.movie
-  margin-bottom: 50px
-  font-size: 50px
 
-.job
-  margin-bottom: 5px
-  font-size: 18px
+.thankyou
+  width: 100%
+  img
+    width: 1000px
+    +mediaquery-tablet
+      width: 500px
+    +mediaquery-tablet-small
+      width: 500px
+    +mediaquery-smartphone
+      width: 300px
 
-.name
-  margin-bottom: 50px
-  font-size: 35px
 
-@keyframes credits
-  0%
-    top: 100%
 
-  100%
-    top: -500%
+.ikehaya dt
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+
+.ikehaya dd
+  display: inline-block
+  vertical-align: middle
+  zoom: 1
+  width: auto
+  text-align: justify
+  line-height: 24px
+  color: #fff
+
+.ikehaya img
+  width: 90px

@@ -2,24 +2,24 @@
   %ul.social-button-syncer
     / Twitter
     %li.sc-tw
-      %a.twitter-share-button{"data-count" => "vertical", "data-dnt" => "true", "data-lang" => "ja", "data-url" => "https://syncer.jp", :href => "https://twitter.com/share"} ツイート
+      %a.twitter-share-button{"data-count" => "vertical", "data-dnt" => "true", "data-lang" => "ja", "data-url" => "http://space-tsukemono.com", :href => "https://twitter.com/share?url=http://space-tsukemono.com/&text=48人全員が知りませんと答えた伝説の宇宙食材「菜乾」#菜乾"} ツイート
     / Facebook
     %li.sc-fb
-      .fb-like{"data-action" => "like", "data-href" => "https://syncer.jp", "data-layout" => "box_count", "data-share" => "false", "data-show-faces" => "true"}
+      .fb-like{"data-action" => "like", "data-href" => "http://space-tsukemono.com", "data-layout" => "box_count", "data-share" => "false", "data-show-faces" => "true"}
     / Google+
     %li
-      .g-plusone{"data-href" => "https://syncer.jp", "data-size" => "tall"}
+      .g-plusone{"data-href" => "http://space-tsukemono.com", "data-size" => "tall"}
     / はてなブックマーク
     %li
-      %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "ja", "data-hatena-bookmark-layout" => "vertical-balloon", :href => "http://b.hatena.ne.jp/entry/https://syncer.jp", :title => "このエントリーをはてなブックマークに追加"}
+      %a.hatena-bookmark-button{"data-hatena-bookmark-lang" => "ja", "data-hatena-bookmark-layout" => "vertical-balloon", :href => "http://b.hatena.ne.jp/entry/http://space-tsukemono.com", :title => "このエントリーをはてなブックマークに追加"}
         %img{:alt => "このエントリーをはてなブックマークに追加", :height => "20", :src => "https://b.st-hatena.com/images/entry-button/button-only@2x.png", :style => "border:none;", :width => "20"}/
     / pocket
     %li
-      %a.pocket-btn{"data-lang" => "en", "data-pocket-count" => "vertical", "data-pocket-label" => "pocket", "data-save-url" => "https://syncer.jp"}
+      %a.pocket-btn{"data-lang" => "en", "data-pocket-count" => "vertical", "data-pocket-label" => "pocket", "data-save-url" => "http://space-tsukemono.com"}
     / LINE [画像は公式ウェブサイトからダウンロードして下さい]
     %li.sc-li
       %a{:href => "http://line.me/R/msg/text/?https://syncer.jp"}
-        %img.sc-li-img{:alt => "LINEに送る", :height => "60", :src => "./linebutton_36x60.png", :width => "36"}/
+        %img.sc-li-img{:alt => "LINEに送る", :height => "60", :src => "assets/img/linebutton.png", :width => "36"}/
   / Facebook用
   #fb-root
 
@@ -27,284 +27,529 @@
 
 %div.mainContent
   %div.talkContent
-    %div.innner
+    %div.inner
 
       %div.linedot
         %span キャラクター紹介
         %hr
 
       %div.characterIntro
-        %dl.ononao
+        %dl.andy.andyIntro
           %dt
-            %img{src: 'assets/img/ononao.png'}
+            %img{src: 'assets/img/andy.png'}
           %dd
-            "おのなお"
-            %p つけもの大好きな青年
-        %dl.hakase
+            長谷川・アンディ
+            %p つけもの大好きで仕方ない外国人
+        %dl.hakase.hakaseIntro
           %dt
             %img{src: 'assets/img/hakase.png'}
           %dd
-            "つけものジジイ"
-            %p 自称つけもの博士
+            つけものじいさん
+            %p よく入れ歯が落ちる自称つけもの博士
+        %dl.hakase.hakaseIntro
+          %dt
+            %img{src: 'assets/img/ha.png', :style => 'width: 30px;'}
+          %dd{:style => 'color: #FF00FF;'}
+            おじいさんの入れ歯
+            %p すごく臭い
 
       %div.linedot
         %hr
 
         /最初
-      %dl.ononao
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
+          %img{src: 'assets/img/andy.png'}
         %dd バクバク ガツガツガツ バクバクバクバク
       %div.image
-        %img{src: '/assets/img/eat.jpg'}
-      %dl.ononao
+        %img{src: 'assets/img/eat.png'}
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd つけものマジうめ〜
-      %dl.ononao
+          %img{src: 'assets/img/andy-4.png'}
+        %dd つけものマジうめ〜〜〜〜〜
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd おっと、旨すぎて全部食っちまった。つけ直すか
+          %img{src: 'assets/img/andy.png'}
+        %dd おっと、旨すぎて全部食っちまった。つけ直すか。
       %div.image
-        %img{src: '/assets/img/tsukemono.JPG'}
+        %img{src: 'assets/img/nukaduke.png'}
         %p ぬちょぬちょぬちょぬちょ
+      %dl.hakase.flower
+        %dt
+          %img{src: 'assets/img/hakase-ikehaya.png'}
+        %dd まだつけもので消耗してるの ？
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-2.png'}
+        %dd ん？イケハヤか ？ あ、ちがった。なんだ、このくそムカつくジジイは ！ ？
       %dl.hakase
         %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd まだつけもので消耗してるのか？
-      %dl.ononao
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd じ、じじい…。ワシはつけもの博士じゃ。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd ん？イケハヤか？あ、ちがった。なんだ、このくそムカつくジジイは！？
+          %img{src: 'assets/img/andy-5.png'}
+        %dd しわっしわ ！
+      %dl.hakase.fuck
+        %dt
+          %img{src: 'assets/img/hakase-4.png'}
+        %dd だまれ ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-6.png'}
+        %dd ひいいいいいいいいいいいいいい。キモチワルイ…。
+      %div.image
+        %img{src: 'assets/img/hakase-1.png'}
+        %p{:style => 'font-size: 40px;'} ガーーーーーン
       %dl.hakase
         %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd じ、じじい・・・。ワシはつけもの博士じゃ。
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd つけものに博士なんて存在しねーだろ
+          %img{src: 'assets/img/hakase-5.png'}
+        %dd …まあいい。これからの時代はこれじゃ！！
+
 
         /菜乾
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd これだからゆとり世代は嫌なんじゃ。まあええわい。これからの時代はこれじゃ！
       %div.image
-        %img{src: '/assets/img/saikan2.jpg'}
-      %dl.ononao
+        %img{src: 'assets/img/saikan1.png'}
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd なんですか？これは？
+          %img{src: 'assets/img/andy.png'}
+        %dd なんですか ？ これは ？
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd とりあえず食ってみろ。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd 菜乾じゃ。
-      %dl.ononao
+        %dd どうじゃ ？ 美味いだろ ？
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 菜乾？！
+          %img{src: 'assets/img/hakase.png'}
+        %dd これはわしが作った新時代のつけものじゃ ！
+      %div.image
+        %img{src: 'assets/img/saikan3.png'}
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd 菜乾じゃ。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-3.png'}
+        %dd サイカン ？ ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
         %dd まあ簡単に言えば、つけものをフリーズドライ化させたものじゃ。
-      %dl.ononao
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd え、これがつけもの？！！！
+          %img{src: 'assets/img/andy-3.png'}
+        %dd え、これがつけもの ？ ！ ！ ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd そうじゃ、水につければ元にもどる。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-4.png'}
+        %dd す、すごい！ もうぬちょぬちょしなくて済むのか ！ ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd そうじゃ、よく見ておけ。
-      %div.image
-        %img{src: '/assets/img/saikan1.jpg'}
+        %dd さらにな、新時代のつけものはそのままでも食べることが出来るのじゃ。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-6.png'}
+        %dd ほれ、ほれ食ってみろ。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-7.png'}
+        %dd あれ、今顔からなにか落ちませんでした ？
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd 気のせいじゃ。食うんじゃ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd ……パクパク ほんとだ、ほんとにつけものだ ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd 博士 ！ もっとくれよ ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd ほれ食ってみろ
-      %dl.ononao
+        %dd ほれ ！
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd パクパク・・・ほんとだ、ほんとにつけものだ！
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd 美味いだろ？これが新時代のつけものじゃ。
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd 新時代のつけものはそのままでも食べることが出来るのじゃ。
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
+          %img{src: 'assets/img/andy.png'}
         %dd バクバク ガツガツガツ バクバクバクバク
-      %dl.ononao
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 美味い、美味すぎる！！
+          %img{src: 'assets/img/andy.png'}
+        %dd 美味い、美味すぎる ！ ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd そうじゃろ、ところでお主、菜乾についてもっと知りたいか ？
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd ま、まあ一応。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd そうじゃろ、ところでお主、菜乾には栄養が沢山含まれてることを知ってるか？
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 菜乾って栄養あるんですか？
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd そうじゃ、食物繊維が半端無く含まれてるんじゃ。
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd 食物繊維は消化液中の脂肪酸に出会うと脂肪に付着し、脂肪の吸収を抑制する効果があるんじゃ。つまりダイエットにも最適なんじゃ。
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd さらには乳酸菌も沢山含まれてる、野菜を加熱しないから加熱に弱いビタミンCまでとれるんじゃ。しかも植物性乳酸菌は、動物性乳酸菌と比べると酸やアルカリそして温度変化にも強く、過酷な環境条件でも生息できるとされいる。そのため植物性乳酸菌は、加熱されても比較的生きたまま腸の奥まで届きやすいのじゃ。
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 乳酸菌まで、つけものすげー！
-      %dl.hakase
-        %dt
-          %img{src: 'assets/img/hakase.png'}
-        %dd 乳酸菌を摂ると、腸内の善玉菌が増えておなかの調子が整うだけでなく、善玉菌の働きでからだの免疫機能も高まり、健康増進に役立つからのー。
+        %dd そうか、そうか！これを読んでみろ。
+        %dl.hakase
+          %dt
+            %img{src: 'assets/img/umamiya.png'}
+          %dd
+            うまみやたつお </br>（ 俳優 ／ ◯宮辰夫漬物本舗 ）
+            %p 著書 </br>『 僕のパパの菜乾は世界一 』
       %div.image
-        %img{src: '/assets/img/news.jpg'}
+        %img{src: 'assets/img/book.png'}
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd ちなみにお主がさっき食べてたきゅうりのつけものは世界一栄養がない食べ物としてギネス記録にのってるぞい。ガハハハハハハ
-      %dl.ononao
+        %dd 息子よ、ありがとう。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd その情報いらねーよ！！
+          %img{src: 'assets/img/andy.png'}
+        %dd 長くて読みたくない。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
+        %dd ……。まぁつまり菜乾はビタミンCが豊富で乳酸菌も入ってて健康になれる食材っていうことじゃ。わしみたいになれるぞ ！
+      %dl.hakase.flower
+        %dt
+          %img{src: 'assets/img/hakase-7.png'}
+        %dd ちなみにお主がさっき食べてたきゅうりのつけものは乳酸菌どころかビタミンCも1gも入ってない、世界一栄養がない食べ物としてギネス記録にのってるぞ。</br>なんの取り柄もないな、ガハハハハハハ
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-6.png'}
+        %dd ひええええええええええええええ、うざいしキモい。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
         %dd まあ落ち着け、ここからが本題じゃ。実はな、宇宙でも和食ブームが起こっているんじゃ。
-      %dl.ononao
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 宇宙で？
+          %img{src: 'assets/img/andy.png'}
+        %dd 宇宙で ？
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd 日本食というのは世界でも健康に良いご飯として認識されているのじゃ。だからISSのように長期滞在を予定している国際パートナーの宇宙飛行士に利用されることも期待されているというわけじゃ。まあ宇宙飛行士たちにも日本食の味を楽しんでもらい長期滞在の際のストレスを和らげたいってことじゃな。宇宙の仕事は大変だからの。
-      %dl.ononao
+        %dd 和食というのは世界でも健康に良いご飯として認識されているのじゃ。和食を食べて、長期滞在の際のストレスを和らげたいってことじゃな。宇宙の仕事は大変だからの。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 日本食にはすごい効果があるんですね！
+          %img{src: 'assets/img/andy.png'}
+        %dd 和食にはすごい効果があるんですね ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd だが一点だけ困ったことがあるんじゃ・・・。
-      %dl.ononao
+        %dd だが一点だけ困ったことがあるんじゃ…。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd なんですか、困ったことって？
+          %img{src: 'assets/img/andy-8.png'}
+        %dd なんですか、困ったことって ？
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
         %dd 今宇宙食に認定されている日本食というのは、これなんじゃが・・・。
       %div.image
-        %img{src: '/assets/img/spacejapan.png'}
-      %dl.ononao
+        %img{src: 'assets/img/spacejapan.png'}
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd あ！つけものがない！
+          %img{src: 'assets/img/andy.png'}
+        %dd あ ！ つけものがない ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd そうなんじゃ・・・。そのせいで最近宇宙飛行士たちの間でもめ...あ、これは言っちゃいかんのだった。
+        %dd そうなんじゃ。ところで衝撃の事実をもう一つ。つけものは世界無形文化遺産だってことを知っていたか？
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-3.png'}
+        %dd え、まじっすか ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd まあなんというか、これでは日本食が返ってストレスの元となっていると思うんじゃ。だから我々がつけものをいや、菜乾を宇宙食にするというのが使命だと思うんじゃ。その方法としてこのサイトで署名を集めて大体100人から1000人くらい集めてJAXAに認定してもらおうと思っているというわけじゃ。
-      %dl.ononao
+        %dd だから宇宙食としてJAXAに認定されたら”宇宙で食べられる世界遺産”としてつけものが認知されるわけじゃ。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 博士！俺もっと菜乾に秘めたパワーを知りたいです！
+          %img{src: 'assets/img/andy-8.png'}
+        %dd え、でもすでに宇宙には和食があるんでしょ ？ それだと菜乾を飛ばしても意味ない気が…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd うるさい！そんなこと分かってるわい！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd だから、菜乾の名前を世界無形文化遺産とかに変えればいいんじゃ！！！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そんなことしたら何なのかよく分からなくなりますよ。理不尽すぎる。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd そうかそうかいいことじゃ。ちなみにつけものは世界無形文化遺産だってことを知っていたか？
-      %dl.ononao
+        %dd ……。
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd え、まじっすか！
+          %img{src: 'assets/img/hakase-10.png'}
+        %dd 菜乾が宇宙食になってないのはおかしいんじゃ。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-3.png'}
+        %dd え、急にどうした？！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd でも宇宙には日本人以外の国籍の人たちもいるわけだし、菜乾ってそんな認知されてないから…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd 世界無形文化遺産じゃぞ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd 菜乾は世界無形文化遺産なんじゃ！あのアンコール遺跡やマチュピチュ、グランドキャニオンと同じなんじゃ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そこまで言うと分からなくもないかも…、でもなんでそこまで菜乾にこだわるんですか？
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd だから宇宙食としてJAXAに認定されたら”宇宙で食べられる世界遺産”として漬物が認知されるわけじゃ。
-      %dl.ononao
+        %dd 実はな、わし菜乾なんじゃ…。
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd え、でもすでに宇宙には日本食があるんでしょ？
+          %img{src: 'assets/img/andy-3.png'}
+        %dd 急なカミングアウト ？ ！
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd そうじゃ。だが日本食は健康に良いという理由だけで宇宙に飛ばされているのじゃ。これでは和食が可哀想じゃ。
+        %dd 今まで宇宙食になるためにいろんなつけものが挑戦してきたんじゃが、保存期間が半年も持たずすべて却下になってしまったんじゃ。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd だからわしらが菜乾を使って日本中、いや世界中に知らしめてやるのじゃ。和食は世界無形文化遺産なんだと、あのアンコール遺跡やマチュピチュ、グランドキャニオンと同じ類なんだと。
+        %dd みんなわしに「後はお前に託した」と言って死んでいった…。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そうだったんですね…。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd ちなみになここだけの話なんじゃが、宇宙人は菜乾が食いたくて地球に来てるっていう説もある。
-      %dl.ononao
+        %dd だからわしはそんなみんなの想いを宇宙に届けたい！
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd え？！つけものすげー！博士、つけものすげーよ！日本人の誇りだよ！
+          %img{src: 'assets/img/andy.png'}
+        %dd はかせ…。
       %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd ちなみに、説明については全部NA◯ERまとめに書いてあった。
-      %dl.ononao
+        %dd だが、資金が足りないんじゃ…、宇宙に行くために資金が必要なんじゃ。
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd なんだよ！博士のことを一瞬でもすげーと思った俺がバカだった・・・。
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd （このサイトも小野ほりでいに似てるし、イケハヤ出すし、極めつけはNA◯ERか・・パクり大好きジジイだな）
-      %dl.ononao
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd ところで博士、ここの電気さっきからチカチカしているんですけど調子悪いんですか？
+          %img{src: 'assets/img/hakase.png'}
+        %dd わしは資金を集めるために身体の一部をここで売っとる。
       %div.image
-        %img{src: '/assets/img/right.jpg'}
-        %p バチバチバチ......バチッ
-
-
-        / 停電
-      %dl.ononao{:style => 'background-color: #000;'}
-        %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd{:style => 'color: #FFFF00;'}  うわ！停電だ！！
-      %dl.hakase{:style => 'background-color: #000;'}
+        %img{src: 'assets/img/saikan2.png'}
+      %dl.hakase
         %dt
           %img{src: 'assets/img/hakase.png'}
-        %dd{:style => 'color: #FFFF00;'}  うわああ、ぎゃあああああああああああああああああああ
-      %dl.ononao{:style => 'background-color: #000;'}
+        %dd
+          %p つけもの「菜乾」 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.andy
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd{:style => 'color: #FFFF00;'}  は、はかせ？？
+          %img{src: 'assets/img/andy.png'}
+        %dd 自分の身体の一部を…、そこまで本気なんですね。ちなみにあといくら必要なんですか？
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd あと27,000円じゃ。50袋分。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd 意外と少ない…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd 今まで地道に貯めてきたからの…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd あ、お前さっき食ったよな ！ 買うんじゃ ！ 50袋買うんじゃ ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-3.png'}
+        %dd え…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd お前が買うんじゃ！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd 無理ですよ…、毎月の小遣い100円だし。全財産20円しかないよ…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd ええい ！ そんな言い訳が通用すると思ってるのか ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-8.png'}
+        %dd 早く買え！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd
+          %p つけもの「菜乾」 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd
+          %p つけもの「菜乾」 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd
+          %p つけもの「菜乾」 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy-9.png'}
+        %dd うわぁ。怖い。博士怖いよ…。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そうか ！ 博士いいこと思いついたよ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-3.png'}
+        %dd ふむ、なんじゃ ？ 返答次第では命がないと思え！
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd （怖すぎる…。）僕達のいる場所ってインターネット上じゃないですか？だからここで代わりに買ってくれる人を集めればいいんじゃないですか？
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd ふむ。たしかにな。そうしよう。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd これを見てる皆さん、どうか博士、いや僕のために菜乾を買って頂けないでしょうか？
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd
+          %p つけもの「菜乾」 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
       %div.image
-        %img{src: '/assets/img/letter2.png'}
-      %div.image
-        %img{src: '/assets/img/letter.png'}
-      %dl.ononao
+        %img{src: 'assets/img/andy-sorry.png'}
+        %p よろしくお願いいたします。
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd た、たいへんだーー！！
-      %dl.ononao
+          %img{src: 'assets/img/hakase.png'}
+        %dd そんなんじゃ足りん！
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd 博士を助けなきゃ！
-      %dl.ononao
+          %img{src: 'assets/img/hakase.png'}
+        %dd
+          %p 「菜乾」万能とうがらし | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
         %dt
-          %img{src: 'assets/img/ononao.png'}
-        %dd みんな、オイラに力を貸してくれ！
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」梅果肉 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」刻みすくぎ | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」しば漬け | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」たくあん | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」みぶ菜 | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-11.png'}
+        %dd
+          %p 「菜乾」赤かぶら | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-12.png'}
+        %dd
+          %p 「菜乾」九条ねぎ | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-12.png'}
+        %dd
+          %p 「菜乾」白菜キムチ | をいしおす
+          %a{:href => 'http://item.rakuten.co.jp/kyoto-morinoya/10000033/', :target => '_blank'} http://item.rakuten.co.jp/kyoto-morinoya/10000033/
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-13.png'}
+        %dd ぜええぜええ、ハァハァハァハァ
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/ha2.png'}
+        %dd ボチャ
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/ha2.png', :style => 'width: 150px;'}
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/ha2.png', :style => 'width: 200px;'}
+      %dl.hakase.flower
+        %dt
+          %img{src: 'assets/img/hakase-1.png'}
+        %dd …………。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そこまで頑張らなくていいですよ。お歳寄りなんだから…。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-14.png'}
+        %dd だみゃれ！わしゃはわしゅはどうしゅても宇宙に行きゅたいんじゃ。ハァハァハァハァ
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-14.png'}
+        %dd 50袋分のゆーあーるえるを用意しにゃいと…。
+      %dl.andy
+        %dt
+          %img{src: 'assets/img/andy.png'}
+        %dd そんなことすると逆に買ってもらえませんよ！
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase.png'}
+        %dd そうか…、じゃあここまでにしておこう。
+      %dl.hakase
+        %dt
+          %img{src: 'assets/img/hakase-10.png'}
+        %dd どうか、わしの菜乾を買ってください。おねがいします。
